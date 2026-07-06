@@ -1,0 +1,35 @@
+:root {
+  --paper: #F6F7F3;
+  --ink: #10151A;
+  --muted: #5B6470;
+  --line: #DDE1D9;
+  --cobalt: #2F4BFF;
+  --diff-add-bg: #E7F5EC;
+  --diff-add: #17773F;
+  --diff-del-bg: #FBEAEA;
+  --diff-del: #B03A3A;
+  --card: #FFFFFF;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--cobalt);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
