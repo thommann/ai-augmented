@@ -18,7 +18,9 @@
             "statusMessage": "Setze Git-Autor (Thomas Mannhart)"
           }
         ]
-      },
+      }
+    ],
+    "PostToolUse": [
       {
         "matcher": "mcp__github__(create|update)_pull_request",
         "hooks": [
