@@ -2,13 +2,14 @@
   <div class="wrap">
     <header>
       <RouterLink class="logo" to="/">ai—augmented<span>.ch</span></RouterLink>
-      <nav>
+      <nav aria-label="Hauptnavigation">
         <a href="#angebot">Angebot</a>
         <a href="#ueber">Über mich</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </header>
 
+    <main>
     <section class="hero" style="border-top:none;">
       <div>
         <div class="eyebrow">AI-Beratung für Software-Teams · Zürich</div>
@@ -99,6 +100,7 @@
       </div>
       <p class="note">thomas@mannhart.ai — Wir schauen uns euren Kontext an, ich sage euch ehrlich, ob und wie ich helfen kann. Kein Pitch-Deck, kein Verkaufsdruck.</p>
     </section>
+    </main>
 
     <footer>
       <div>© 2026 AI Augmented — Thomas Mannhart</div>
