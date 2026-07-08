@@ -28,8 +28,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Eigene Domain: Base-Pfad / statt /ai-augmented/, absolute URLs
+      # (Canonical, Open Graph, Sitemap) zeigen auf ai-augmented.ch.
       - name: Build
         run: npm run build
+        env:
+          VITE_BASE: /
+          VITE_SITE_URL: https://ai-augmented.ch
 
       # SPA-Fallback: GitHub Pages liefert bei Direktaufrufen von
       # /impressum etc. sonst eine 404-Seite.
